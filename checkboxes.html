@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script type="text/javascript">
+        function myFunction() {
+            var checkBox = document.getElementById("myCheck1");
+            var checkBox1 = document.getElementById("myCheck2");
+            var text = document.getElementById("text");
+            if (checkBox.checked == true && checkBox1.checked == true){
+                alert("Oba checkboxy zaznaczone");
+            } else if (checkBox.checked == true && checkBox1.checked == false){
+                alert("Zaznaczony Checkbox1");
+            } else if (checkBox.checked == false && checkBox1.checked == true){
+                alert("Zaznaczony Checkbox2");
+            } else 
+                alert("Oba checkboxy niezaznaczone");
+        }
+    </script>
+    <p>Zaznacz checkboxy i sprawdź ich stan</p>
+    Checkbox 1: <input type="checkbox" id="myCheck1" />
+    Checkbox 2: <input type="checkbox" id="myCheck2" />
+    <br>
+    <input type="button" value="Sprawdź stan checkboxów" onClick="myFunction()"/>
+</body>
+</html>
