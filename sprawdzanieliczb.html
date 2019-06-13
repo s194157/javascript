@@ -1,0 +1,19 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function myFunction(){
+			var liczba = document.getElementById("pole").value;
+			if (liczba > 0) document.getElementById("wynik").innerHTML="Liczba dodatnia";
+			else if (liczba < 0) document.getElementById("wynik").innerHTML="Liczba ujemna";
+			else if (liczba == 0) document.getElementById("wynik").innerHTML="Zero";
+			else document.getElementById("wynik").innerHTML="To nie jest liczba";
+			}
+			</script>
+	<input type="text" id="pole" />
+    <input type="submit" id="sprawdz" onclick="myFunction()" />
+    <div id="wynik"></div>
+</body>
+</html>
