@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Break a string and convert it into an array of words.</title>
+</head>
+<body>
+<
+</body>
+
+<script> 
+var str = "Piast Gliwice Mistrzem Polski jest był i będzie";
+var words = str.split(" ");
+
+function chunkArray(myArray, chunk_size) {
+    let results = [];
+    
+    while (myArray.length) {
+        results.push(myArray.splice(0, chunk_size))
+    }
+
+    return results;
+}
+var result = chunkArray([words], 1);
+console.log(result);
+
+</script>
+</html>
