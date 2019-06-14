@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function myFunction(){
+			var tekst = document.getElementById("pole").value;
+			document.getElementById("wynik").innerHTML="Długość tekstu to 				"+tekst.length+" znaków Litera a jest na "
+            +(tekst.indexOf("a")+1)+" pozycji";
+			}
+			</script>
+    <!--https://www.w3schools.com/js/js_string_methods.asp-->       
+    <input type="text" id="pole" />
+    <input type="submit" id="sprawdz" onclick="myFunction()" />
+    <div id="wynik"></div>
+</body>
+</html>
